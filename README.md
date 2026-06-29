@@ -26,7 +26,7 @@ An exploratory data analysis of traffic incident reports logged by the Metropoli
 ## The Process
 
 1. **Data Cleaning** — Dropped irrelevant columns (Tweet, Source), filtered low-accuracy entries, fixed encoding errors, standardized city names, handled nulls, and categorized 493 raw incident type values into 10 clean categories.
-2. **Feature Engineering** — Extracted Month from the Date column and Hour from the Time column. Created "Type_Category" to group messy incident descriptions into usable labels.
+2. **Feature Engineering** — Extracted `Month` (ex. August 2018) from the Date column and `Hour` (ex. 0–23) from the Time column. Created `Type_Category` to group messy incident descriptions into usable labels.
 3. **EDA** — Analyzed incident distribution by city, hour, month, type, direction, and average lanes blocked.
 4. **Visualization** — Plotted findings using Seaborn bar charts, line charts, and a heatmap.
 
@@ -54,8 +54,8 @@ An exploratory data analysis of traffic incident reports logged by the Metropoli
 ## How It Can Be Improved
 
 - Add geospatial analysis using the Latitude and Longitude columns to map incident hotspots
-- Build an interactive dashboard using using Tableau or Power BI
-- Expand the `Type_Category` classification to reduce entries falling into "Other"
+- Build an interactive dashboard using Tableau or Power BI
+- Expand the `Type_Category` classification to reduce entries falling into `Other`
 - Cross-reference with weather or holiday data to identify additional patterns
 
 ---
